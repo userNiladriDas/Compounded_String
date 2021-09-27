@@ -61,7 +61,7 @@ public class CompoundedString {
 		time=(end-start);
 		System.out.println();
 		System.out.println("Longest Compounded String: "+final_s[0]);
-        System.out.println("Second Longest Compounded String: "+final_s[1]);
+        	System.out.println("Second Longest Compounded String: "+final_s[1]);
 		System.out.println("Time taken to process the input file: "+time+"ms");
 	}
 }
