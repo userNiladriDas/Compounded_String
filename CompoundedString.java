@@ -27,17 +27,9 @@ public class CompoundedString {
         //Main Logic
         String final_s[] = new String[2];
 		//Sort has been done in decreasing order
-        for(i = 0; i<c ;i++)
-		{
-			String temp = s[i];
-			int j = i-1;
-			while(j>=0 && temp.length()>s[j].length())
-			{
-				s[j+1] = s[j];
-				j--;
-			}
-			s[j+1] = temp;
-		}							
+        Arrays.sort(s, (String a, String b) -> {
+		    return b.length() - a.length();
+		});								
 
 		int k = 0;
 		for(i = 0; i<c ; i++)
